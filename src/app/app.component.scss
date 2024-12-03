@@ -1,0 +1,83 @@
+*/
+ion-app {
+    --background: #f4f4f4;
+    --color: #333;
+  }
+  
+  
+  ion-header {
+    background-color: #4CAF50; 
+    color: white;
+    padding: 10px;
+    ion-title {
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+  
+
+  ion-toolbar {
+    --background: #4CAF50; 
+    color: white;
+  }
+  
+ 
+  ion-content {
+    padding: 20px;
+    background-color: #ffffff;
+  }
+  
+  
+  ion-button {
+    --background: #4CAF50; 
+    --color: white; 
+    --border-radius: 12px; 
+    padding: 12px;
+  }
+  
+  
+  ion-item {
+    margin-bottom: 15px; 
+    --highlight-background: #e0f7fa; 
+  }
+  
+  
+  ion-label {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  
+  ion-input, ion-datetime {
+    --padding-start: 10px;
+    --padding-end: 10px;
+    --border-radius: 10px;
+  }
+  
+  
+  ion-page {
+    --background: #f9f9f9;
+  }
+  
+  
+  .toast-message {
+    font-size: 16px;
+    padding: 10px;
+    color: #fff;
+    background-color: #3880ff;
+    border-radius: 5px;
+  }
+  
+  
+  ion-list {
+    margin-top: 10px;
+  }
+  
+ 
+  ion-footer {
+    background-color: #4CAF50; 
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+  

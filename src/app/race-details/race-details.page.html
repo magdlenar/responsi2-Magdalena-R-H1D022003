@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Race Details</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/races"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content *ngIf="raceDetails; else notFound">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>{{ raceDetails.name }}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p><strong>Description:</strong> {{ raceDetails.description }}</p>
+      <p><strong>Date:</strong> {{ raceDetails.date }}</p>
+      <p><strong>Location:</strong> {{ raceDetails.location }}</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+
+<ng-template #notFound>
+  <ion-content>
+    <div class="no-data">
+      <h2>Race Not Found</h2>
+      <p>We couldn't find the race details for the given ID.</p>
+    </div>
+  </ion-content>
+</ng-template>

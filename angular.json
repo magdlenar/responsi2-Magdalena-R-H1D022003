@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "app": {
+    "radiator-springs-speedway": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -29,6 +29,11 @@
                 "glob": "**/*.svg",
                 "input": "node_modules/ionicons/dist/ionicons/svg",
                 "output": "./svg"
+              },
+              {
+                "glob": "**/*",
+                "input": "src/assets/race-images",
+                "output": "assets/race-images"
               }
             ],
             "styles": ["src/global.scss", "src/theme/variables.scss"],
@@ -74,10 +79,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "app:build:production"
+              "buildTarget": "radiator-springs-speedway:build:production"
             },
             "development": {
-              "buildTarget": "app:build:development"
+              "buildTarget": "radiator-springs-speedway:build:development"
             },
             "ci": {
               "progress": false
@@ -88,7 +93,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "app:build"
+            "buildTarget": "radiator-springs-speedway:build"
           }
         },
         "test": {
@@ -136,7 +141,8 @@
   "cli": {
     "schematicCollections": [
       "@ionic/angular-toolkit"
-    ]
+    ],
+    "analytics": "153c8898-7115-4501-8d95-1e0d0f571ba9"
   },
   "schematics": {
     "@ionic/angular-toolkit:component": {

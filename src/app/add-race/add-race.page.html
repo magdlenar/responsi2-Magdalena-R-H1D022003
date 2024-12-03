@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Tambah Balapan</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form (ngSubmit)="addRace()">
+    <ion-item>
+      <ion-label position="floating">Nama Balapan</ion-label>
+      <ion-input type="text" [(ngModel)]="raceName" name="raceName" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Deskripsi Balapan</ion-label>
+      <ion-input type="text" [(ngModel)]="raceDescription" name="raceDescription" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Tanggal Balapan</ion-label>
+      <ion-datetime [(ngModel)]="raceDate" name="raceDate" required></ion-datetime>
+    </ion-item>
+
+    <ion-button expand="full" type="submit" [disabled]="!raceName || !raceDescription || !raceDate">
+      Tambah Balapan
+    </ion-button>
+  </form>
+</ion-content>
